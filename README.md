@@ -45,6 +45,7 @@ local opts = {
   preview_bg_highlight = 'Pmenu',
   autofold_depth = nil,
   auto_unfold_hover = true,
+  auto_center_selection = false,
   fold_markers = { '', '' },
   wrap = false,
   keymaps = { -- These keymaps can be a string or a table for multiple keys
@@ -114,6 +115,7 @@ local opts = {
 | symbol_blacklist       | Which symbols to ignore ([possible values](./lua/symbols-outline/symbols.lua)) | table (array)      | {}                       |
 | autofold_depth         | Depth past which nodes will be folded by default                               | int                | nil                      |
 | auto_unfold_hover      | Automatically unfold hovered symbol                                            | boolean            | true                     |
+| auto_center_selection  | Automatically center the selection in the code window                          | boolean            | false                    |
 | fold_markers           | Markers to denote foldable symbol's status                                     | table (array)      | { '', '' }             |
 | wrap                   | Whether to wrap long lines, or let them flow off the window                    | boolean            | false                    |
 
